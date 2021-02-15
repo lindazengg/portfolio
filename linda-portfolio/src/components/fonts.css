@@ -1,0 +1,33 @@
+.primary {
+	color: #541313;
+	font-size: 6vh;
+	font-weight: bold;
+	display: inline-block; 
+	text-align: left;
+	margin-left: 1vh;
+	margin-right:  1vh;
+	margin-bottom:  5vh;
+	max-width: 400px;
+}
+
+.text {
+	display: inline-block; 
+	text-align: left;
+	max-width: 400px;
+	font-size: 20px;
+	margin: 1vh;
+}
+
+.projectTitle {
+	font-size: 30px;
+	font-weight: bolder;
+	text-align: left;
+}
+
+
+.projectText {
+	display: inline-block; 
+	text-align: left;
+	font-size: 20px;
+	margin: 1vh;
+}
