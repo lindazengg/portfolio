@@ -10,11 +10,13 @@ import "../components/fonts.css"
 
 const IndexPage = () => (
   <Layout val={ 0 }>
-  <div className="row justify-content-center">
+  <div className="row justify-content-center" style= {{
+    paddingTop: `6vh`
+  }}>
 
-  <div className="col" style={{
-    textAlign: `center`
-  }} >
+  <div className="col-md-5" style={{
+  paddingLeft: `20vh`
+  }}>
   <div>
   <span className="primary">
   Bronx-born,
@@ -28,32 +30,8 @@ const IndexPage = () => (
   </div>
   </div>
   <div className="col" style={{
-    textAlign: `center`
   }}> 
   <img src={about} alt="linda carryig a big sausage" />
-  </div>
-  </div>
-
-  <div className="row" style={{
-      paddingTop: `5vh`,
-      paddingBottom: `2vh`,
-      bottom: `0`,
-      textAlign: `center`
-  }}>
-  <div className="col">
-  <MyButton>
-  EMAIL
-  </MyButton>
-  </div>
-  <div className="col">
-  <MyButton>
-  RESUME
-  </MyButton>
-  </div>
-  <div className="col">
-  <MyButton>
-  LINKEDIN
-  </MyButton>
   </div>
   </div>
   </Layout>

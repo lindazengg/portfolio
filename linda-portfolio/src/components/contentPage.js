@@ -14,11 +14,14 @@ const ContentPage = ({ children, val, val2}) => (
         bottom: `0`
       }}>
       <div className="col" style={{
-        bottom: `0`, 
+        top: `0`,
+        zIndex: `5`,
         position: `sticky`,
-        alignSelf: `end`,
+        display: `block`,
+        height: `fit-content`,
+        paddingTop: `8vh`,
         marginRight: `50px`,
-        marginLeft: `10px`
+        marginLeft: `50px`
       }}>
 
 
@@ -28,14 +31,14 @@ const ContentPage = ({ children, val, val2}) => (
           className="secondnav_link_active"
           to="/"
         >
-          UI/UX Design
+          UI/UX DESIGN
         </Link>
       : 
         <Link
           to="/"
           className="secondnav_link"
         >
-          UI/UX Design
+          UI/UX DESIGN
         </Link>
       }
       <br/>
@@ -45,18 +48,20 @@ const ContentPage = ({ children, val, val2}) => (
           className="secondnav_link_active"
           to="/"
         >
-          Experience Design
+          EXPERIENCE DESIGN
         </Link>
       : 
         <Link
           to="/"
           className="secondnav_link"
         >
-          Experience Design
+          EXPERIENCE DESIGN
         </Link>
       }
       </div>
-      <div className="col-10">
+      <div className="col-10" style={{
+        padding: `50px`
+      }}>
       { children }
       </div>
       </div>

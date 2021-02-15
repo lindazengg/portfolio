@@ -3,70 +3,41 @@ import PropTypes from "prop-types"
 import React from "react"
 
 import "./layout.scss"
+import filler from "../images/filler.jpg"
 
 
 const Header = ({ val }) => (
-  <header
-    style={{
-      top:`0`,
-      position: `sticky`,
-      zIndex: `3`,
-      margin: `0 auto`,
-      paddingTop: `3vh`,
-      marginLeft: `5vw`,
-      marginRight: `5vw`,
-      backgroundColor: `rgba(256, 256, 256, 0.8)`
-    }}
-  >
-
-  <div className="row" style={{
-    margin: `0 auto`
-  }}>
-
-    <div className="col" style={{
-      paddingBottom: `10px`
-    }}>
-
+  <header>
       <span 
         style={{
           left:`3vh`,
           zIndex: `3`,
           padding: `0 1.0875rem`,
           fontSize: `18px`,
-          fontFamily: `Roboto`,
           fontWeight: `500`,
           lineHeight: `21px`,
           letterSpacing: `0.325em`
         }}>
         <Link
           to="/"
-          style={{
-            textDecoration: `none`,
-            color: `#541313`,
-            fontWeight: `900`,
-            letterSpacing: `0.55em`,
-            minHeight: `200px`
-          }}
+          className="headerName"
         >
             LINDA ZENG
         </Link>
       </span>
+      <br/>
 
+      <img src={ filler } alt="linda zeng" style={{
+        maxWidth: `15vh`,
+        paddingBottom: `40px`
+      }}
+      />
 
-
-    </div>
-    <div className="col" style={{
-      textAlign: `right`,
-      paddingBottom: `10px`
-    }}>
-
+      <br/>
 
       <span 
       style={{
-        right: `-10px`,
-        padding: `0 1.0875rem`,
         fontSize: `18px`,
-        fontFamily: `Roboto`,
         fontWeight: `500`,
         lineHeight: `21px`,
         letterSpacing: `0.065em`
@@ -90,8 +61,7 @@ const Header = ({ val }) => (
         </Link>
       }
 
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
+      <br/>
 
 
       { val === 1 ? 
@@ -111,7 +81,7 @@ const Header = ({ val }) => (
         </Link>
       }
 
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <br/>
     
       { val === 2 ? 
 
@@ -130,8 +100,7 @@ const Header = ({ val }) => (
         </Link>
       }
 
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
+      <br/>
           
       { val === 3 ? 
 
@@ -157,10 +126,6 @@ const Header = ({ val }) => (
 
       </span>
 
-    </div>
-
-
-  </div>
 
   </header>
 )

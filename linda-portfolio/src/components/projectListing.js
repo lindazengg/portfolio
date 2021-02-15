@@ -11,43 +11,36 @@ const ProjectListing = ({ children, date, title, summary, page }) => (
       navigate(page)
     }}
     style={{
-      marginBottom: `25px`
+      marginBottom: `35px`
     }}
   >
   <div className="row">
-  <div className="col-md-4" style={{
-    textAlign: `left`,
-    marginLeft: `15px`,
-    marginBottom: `20px`
+  <div className="col-md" style={{
+    textAlign: `right`,
+    width: `35vw`
   }}>
   { children }
   </div>
   <div className="col" style={{
     marginLeft: `10px`,
-    marginRight: `10px`
+    marginRight: `10px`,
+    width: `10vw`
   }}>
 
   <div className="row" style={{
-    alignItems: `baseline`,
-    marginBottom: `-5px`
-  }}>
-  <div className="col"  style={{
-    textAlign: `left`,
-    marginBottom: `-30px`
+    alignItems: `baseline`
   }}>
   <span className="projectTitle"> 
   { title }
   </span>
-  </div>
-
-  <div className="col-md-4" style={{
+  <span style={{
     textAlign: `left`,
     marginBottom: `20px`,
     fontWeight: `100`,
     fontSize: `16px`
   }}>
   { date }
-  </div>
+  </span>
   </div>
 
   <div className="row" style={{
@@ -55,9 +48,9 @@ const ProjectListing = ({ children, date, title, summary, page }) => (
     marginBottom: `-45px`
   }} >
   <div className="col">
-  <p className="projectText">
+  <span className="projectText">
   { summary }
-  </p>
+  </span>
   </div>
   </div>
 

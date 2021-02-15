@@ -5,35 +5,69 @@ $secondaryColor: #541313;
 $hoverBgColor : #f5f5f5;
 $hoverBgColorr: #d0dbc6;
 
+
+#header {
+}
+
+
+.headerName {
+  text-decoration: none;
+  color: $primaryColor;
+  font-weight: 900;
+  letter-spacing: 0.55em;
+  min-height: 20px;
+  display: block;
+}
+
+.headerName:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: $primaryColor;
+}
+
+.headerName:focus {
+  text-decoration: none;
+  color: $primaryColor;
+}
+
 .col {
 	padding-bottom: 5vh;
 }
 
 .navlink_active {
 	text-decoration-line: underline;
-	  text-decoration-color: $secondaryColor;
-	  text-decoration-thickness: 5px;
+	  text-decoration-color: $primaryColor;
+	  text-decoration-thickness: 10px;
 	  color: $primaryColor;
+	  display: block;
+	  padding-bottom: 5px;
 }
 
 .navlink_active:hover {
-	color: #6e180b;
+	color: $primaryColor;
 	text-decoration-line: underline;
-	  text-decoration-color: $secondaryColor;
-	  text-decoration-thickness: 5px;
+	  text-decoration-color: $primaryColor;
+	  text-decoration-thickness: 10px;
+	  display: block;
+	  padding-bottom: 5px;
+	  transition: linear 1s;
 }
 
 .navlink:hover {
-	color: $secondaryColor;
+	color: $primaryColor;
 	text-decoration-line: underline;
-	  text-decoration-color: $secondaryColor;
-	  text-decoration-thickness: 5px;
+	  text-decoration-color: white;
+	  text-decoration-thickness: 10px;
+	  display: block;
+	  padding-bottom: 5px;
+	  transition: linear 1s;
 }
 
 .navlink {
     text-decoration: none;
-    color: black;
-    background-color: rgba(256, 256, 256, 0.75);
+    color: $primaryColor;
+	  display: block;
+	  padding-bottom: 5px;
 }
 
 .projectListing {
@@ -50,17 +84,8 @@ $hoverBgColorr: #d0dbc6;
 	outline: none;
 }
 
-.projectListing:hover {
-	padding-top: 10px;
-	margin-bottom: 10px;
-	border-style: solid;
-	border-width: 0.5px;
-      box-shadow: 5px 5px 2px 1px $hoverBgColorr;
-        transition: .2s all ease-out;
-}
-
 .projectPicture {
-	width: 30vh;
+  width: 30vw;
 }
 
 .secondnav_link_active {
@@ -68,8 +93,8 @@ $hoverBgColorr: #d0dbc6;
 	text-decoration: none;
 	color: black;
 	display: inline-block;
-	font-size: 20px;
-	font-weight: bold;
+	font-size: 16px;
+	font-weight: light;
 	text-decoration: underline;
 	text-decoration-thickness: 5px;
 }
@@ -80,9 +105,9 @@ $hoverBgColorr: #d0dbc6;
 	text-decoration: none;
 	color: $secondaryColor;
 	display: inline-block;
-	font-size: 20px;
+	font-size: 16px;
 	background-color: white;
-	font-weight: bold;
+	font-weight: light;
 }
 
 .secondnav_link {
@@ -90,8 +115,8 @@ $hoverBgColorr: #d0dbc6;
 	text-decoration: none;
 	color: black;
 	display: inline-block;
-	font-size: 20px;
-	font-weight: bold;
+	font-size: 16px;
+	font-weight: light;
 }
 
 .secondnav_link:hover {
@@ -99,6 +124,6 @@ $hoverBgColorr: #d0dbc6;
 	text-decoration: none;
 	color: $secondaryColor;
 	display: inline-block;
-	font-size: 20px;
-	font-weight: bold;
+	font-size: 16px;
+	font-weight: light;
 }

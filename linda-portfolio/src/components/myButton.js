@@ -2,6 +2,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import { navigate } from "gatsby"
 
+import "./layout.scss"
 
 const MyButton = ({ children, page }) => (
   <button
@@ -11,8 +12,9 @@ const MyButton = ({ children, page }) => (
     style={{
       width: `300px`,
       fontStyle: `light`,
+      fontFamily: `Poppins`,
       fontWeight: 300,
-      fontSize: 20,
+      fontSize: 16,
       marginBottom: `0.7rem`,
       whiteSpace: `normal`,
       textAlign: `center`
