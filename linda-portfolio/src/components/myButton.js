@@ -9,18 +9,8 @@ const MyButton = ({ children, page }) => (
     onClick={() => {
       navigate(page)
     }}
-    style={{
-      width: `300px`,
-      fontStyle: `light`,
-      fontFamily: `Poppins`,
-      fontWeight: 300,
-      fontSize: 16,
-      marginBottom: `0.7rem`,
-      whiteSpace: `normal`,
-      textAlign: `center`
-    }}
     type="button" 
-    className="btn btn-outline-dark"
+    className="btn"
   >
   {children}
   </button>

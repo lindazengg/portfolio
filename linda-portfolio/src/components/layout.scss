@@ -7,8 +7,41 @@ $hoverBgColorr: #d0dbc6;
 
 
 #header {
+  z-index: 20;
+  display: block;
+  background-color: white;
 }
 
+#navbarNav {
+  height: 100vh;
+  margin-left: 3vh;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+#photoCol {
+  margin-top: 6vh;
+}
+
+.btn {
+      font-style: light;
+      font-family: Poppins;
+      margin-bottom: 0.7rem;
+      border: solid 1px !important;
+      margin: 0;
+      background-color: transparent;
+}
+
+.back {
+  margin-bottom: 10px;
+  display: block;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.back:hover {
+  transform: rotate(-10deg);
+}
 
 .headerName {
   text-decoration: none;
@@ -56,11 +89,11 @@ $hoverBgColorr: #d0dbc6;
 .navlink:hover {
 	color: $primaryColor;
 	text-decoration-line: underline;
-	  text-decoration-color: white;
+	  text-decoration-color: $primaryColor;
 	  text-decoration-thickness: 10px;
 	  display: block;
 	  padding-bottom: 5px;
-	  transition: linear 1s;
+	  transition: ease-out 1s;
 }
 
 .navlink {
@@ -72,9 +105,23 @@ $hoverBgColorr: #d0dbc6;
 
 .projectListing {
 	padding-top: 10px;
-	margin-bottom: 10px;
+	padding-bottom: 10px;
 	border: none;
 	background-color: transparent;
+}
+
+.projectListing:hover {
+  background: url("https://ewebdesign.com/wp-content/themes/ewebdesign/assets/img/wave.svg");
+  background-repeat: repeat;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-size: auto auto;
+  background-repeat: repeat-x;
+  background-size: 15px 5px;
+  background-position: 2px 0px;
+  text-decoration: none;
+  background-color: transparent;
+  transform: rotate(1deg);
 }
 
 .projectListing:focus {
@@ -85,29 +132,33 @@ $hoverBgColorr: #d0dbc6;
 }
 
 .projectPicture {
-  width: 30vw;
+  width: 100%;
 }
 
 .secondnav_link_active {
-	margin-bottom: 15px;
-	text-decoration: none;
+	margin-bottom: 30px;
 	color: black;
 	display: inline-block;
 	font-size: 16px;
 	font-weight: light;
 	text-decoration: underline;
-	text-decoration-thickness: 5px;
+	text-decoration-thickness: 10px;
+	text-decoration-color: black;
+	line-height: 2;
 }
 
 
 .secondnav_link_active:hover {
 	margin-bottom: 15px;
-	text-decoration: none;
-	color: $secondaryColor;
+	color: black;
 	display: inline-block;
 	font-size: 16px;
 	background-color: white;
 	font-weight: light;
+	text-decoration: underline;
+	text-decoration-thickness: 10px;
+	text-decoration-color: black;
+	line-height: 2;
 }
 
 .secondnav_link {
@@ -121,9 +172,40 @@ $hoverBgColorr: #d0dbc6;
 
 .secondnav_link:hover {
 	margin-bottom: 15px;
-	text-decoration: none;
-	color: $secondaryColor;
+	color: black;
 	display: inline-block;
 	font-size: 16px;
 	font-weight: light;
+	text-decoration: underline;
+	text-decoration-thickness: 10px;
+	text-decoration-color: black;
+	line-height: 2;
+}
+
+.photo {
+  width: 100%;
+}
+
+.caption{
+  font-family: 'Maven Pro';
+  font-style: italic;
+    position: absolute;
+}
+
+
+.photoClass {
+  overflow: hidden;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 50px;
+
+  .caption {
+    display: none;
+  }
+}
+
+.photoClass:hover {
+  .caption {
+    display: block;
+  }
 }

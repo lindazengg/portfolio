@@ -7,7 +7,7 @@ import { Link, navigate } from "gatsby"
 
 import "./layout.scss"
 
-const ContentPage = ({ children, val, val2}) => (
+const ContentPage2 = ({ children, val, val2}) => (
     <>
       <Layout val={ val }>
       <div className="row" style={{
@@ -27,45 +27,60 @@ const ContentPage = ({ children, val, val2}) => (
 
 
 
-        { val2 === 0 ? 
+        { val2 === 0 ?
         <Link
           className="secondnav_link_active"
-          to="/uiux_design"
+          to="/painting"
         >
-          UI/UX DESIGN
+          PAINTING
         </Link>
-      : 
+      :
         <Link
-          to="/uiux_design"
+          to="/painting"
           className="secondnav_link"
         >
-          UI/UX DESIGN
+          PAINTING
         </Link>
       }
       <br/>
 
-      { val2 === 1 ? 
+      { val2 === 1 ?
         <Link
           className="secondnav_link_active"
-          to="/experienceDesign"
+          to="/illustration"
         >
-          EXPERIENCE DESIGN
+          ILLUSTRATION
         </Link>
-      : 
+      :
         <Link
-          to="/experienceDesign"
+          to="/illustration"
           className="secondnav_link"
         >
-          EXPERIENCE DESIGN
+          ILLUSTRATION
+        </Link>
+      }
+      <br/>
+
+      { val2 === 2 ?
+        <Link
+          className="secondnav_link_active"
+          to="/sketches"
+        >
+          SKETCHES
+        </Link>
+      :
+        <Link
+          to="/sketches"
+          className="secondnav_link"
+        >
+          SKETCHES
         </Link>
       }
       </div>
-      <div className="col">
       { children }
-      </div>
       </div>
       </Layout>
     </>
   )
 
-export default ContentPage
+export default ContentPage2

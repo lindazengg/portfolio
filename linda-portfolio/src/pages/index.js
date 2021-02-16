@@ -10,28 +10,37 @@ import "../components/fonts.css"
 
 const IndexPage = () => (
   <Layout val={ 0 }>
-  <div className="row justify-content-center" style= {{
-    paddingTop: `6vh`
+  <div className="row" style= {{
+    paddingTop: `7vh`,
+    paddingLeft: `6vh`
   }}>
 
-  <div className="col-md-5" style={{
-  paddingLeft: `20vh`
+  <div className="col-md" style={{
   }}>
-  <div>
   <span className="primary">
-  Bronx-born,
+  Bronx-born,<br/>
   Boston-based.
   </span>
+  </div>
+  </div>
 
-  <p className="text">
+  <div className="row" style={{
+    marginLeft: `20vw`,
+    marginRight: `1vw`
+  }}>
+
+  <div className="col-sm-4">
+  <span className="text">
   Hello, I am Linda Zeng. I’m a student studying Experience Design at Northeastern University. Originally a civil engineering student, I found that I wanted to impact society outside of the built environment. I am greatly interested in engaging and developing different solutions that can benefit many aspects of society.
-  </p>
+  </span>
+  </div>
 
-  </div>
-  </div>
-  <div className="col" style={{
-  }}> 
-  <img src={about} alt="linda carryig a big sausage" />
+  <div className="col-sm-5">
+  <img style={{
+    width: `100%`
+  }}
+  src={about} alt="linda carrying a big sausage" />
+
   </div>
   </div>
   </Layout>
