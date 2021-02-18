@@ -10,6 +10,7 @@ import "../components/layout.scss"
 import Photo from "../components/photo.js"
 import replace from "../images/replace.jpg"
 import replaceTall from "../images/replace-tall.jpg"
+import "../components/fonts.scss"
 
 const Illustration = () => (
   <ContentPage2 val={ 2 } val2={ 1 }>

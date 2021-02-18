@@ -9,6 +9,7 @@ import { navigate } from "gatsby"
 import "../components/layout.scss"
 import Photo from "../components/photo.js"
 import replace from "../images/replace.jpg"
+import "../components/fonts.scss"
 import replaceTall from "../images/replace-tall.jpg"
 
 const Sketches = () => (

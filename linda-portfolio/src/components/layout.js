@@ -7,17 +7,19 @@ import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
 import "./layout.scss"
+import email from "../images/emailicon.png"
+import resume from "../images/resumeicon.png"
+import linkedin from "../images/linkedin.png"
 
 const Layout = ({ children, val }) => (
     <>
-      <div className="row">
+      <div className="row" style={{maxWidth: `100vw`}}>
       <div className="col-xl-2" id="header" style={{
       top:`0`,
       position: `sticky`,
       display: `block`,
       overflowWrap: `anywhere`,
       height: `fit-content`,
-      paddingTop: `3vh`,
       paddingLeft: `3vw`,
       paddingRight: `3vw`
     }}>
@@ -27,18 +29,38 @@ const Layout = ({ children, val }) => (
       { children }
       </div>
 
-      <div className="col-xl-1">
-        contact icon
-        <br/>
-        email icon
-        <br />
-        linkedin icon
+      <div className="col-xl-2">
+      <div style={{
+        textAlign: `center`,
+        paddingRight: `2vh`,
+        paddingTop: `9vh`,
+        paddingBottom: `6vh`,
+        top: `0`,
+        position: `sticky`
+      }}>
+      <div style={{display: `inline-block`, textAlign: `left`}}>
+      <div className="row">
+        <a className="iconlinks" href="">
+        <img src={ email } alt="Email icon" /> 
+        <span className="iconlinktext"> EMAIL </span>
+        </a>
+        </div>
+        <div className="row">
+        <a className="iconlinks" href="">
+         <img src={ resume } alt="Resume icon" /> 
+        <span className="iconlinktext"> RESUME </span>
+         </a>
+         </div>
+         <div className="row">
+        <a className="iconlinks" href="">
+         <img src={ linkedin } alt="Linkedin icon" /> 
+        <span className="iconlinktext"> LINKEDIN </span>
+         </a>
+         </div>
+         </div>
+         </div>
       </div>
       </div>
-       <Helmet>
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-<link href="https://fonts.googleapis.com/css2?family=Cantarell:wght@700&family=Hammersmith+One&family=Maven+Pro:wght@400;900&family=Miriam+Libre:wght@400&family=Poppins:wght@200&display=swap" rel="stylesheet"/>
-      </Helmet>
     </>
   )
 

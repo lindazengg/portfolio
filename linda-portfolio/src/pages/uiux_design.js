@@ -10,6 +10,7 @@ import peaceThroughPlay from "../images/peacethruplay.png"
 import bondetous from "../images/bondetous.png"
 import roomPal from "../images/roompal.png"
 import "../components/layout.scss"
+import "../components/fonts.scss"
 
 const UiUxDesignPage = () => (
   <ContentPage val={ 1 } val2={ 0 }>

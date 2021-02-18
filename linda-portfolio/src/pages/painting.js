@@ -6,6 +6,7 @@ import MyButton from "../components/myButton"
 import ContentPage2 from "../components/contentPage2.js"
 import { navigate } from "gatsby"
 
+import "../components/fonts.scss"
 import "../components/layout.scss"
 import Photo from "../components/photo.js"
 import replace from "../images/replace.jpg"

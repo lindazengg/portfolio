@@ -2,7 +2,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import { navigate } from "gatsby"
 
-import "./fonts.css"
+import "./fonts.scss"
 
 const ProjectListing = ({ children, date, title, summary, page }) => (
   <button
@@ -20,7 +20,7 @@ const ProjectListing = ({ children, date, title, summary, page }) => (
   >
   <div className="row"
   >
-  <div className="col-sm-6" style={{
+  <div className="col-sm-7" style={{
     textAlign: `right`,
     marginBottom: `2vh`
   }}>

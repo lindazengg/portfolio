@@ -8,6 +8,7 @@ import { navigate } from "gatsby"
 
 import peaceThroughPlay from "../images/peacethruplay.png"
 import "../components/layout.scss"
+import "../components/fonts.scss"
 
 const ExperienceDesign = () => (
   <ContentPage val={ 1 } val2={ 1 }>

@@ -29,7 +29,11 @@ module.exports = {
                 resolve: `gatsby-plugin-google-fonts`,
                 options: {
                     fonts: [
-                        `poppins:300,400,500,600,700`
+                        `poppins:300,400,500,600,700`,
+                        `cantarell`,
+                        `maven pro`,
+                        `miriam libre`,
+                        `walter turncoat`
                     ], display: 'swap'
                 }
             }

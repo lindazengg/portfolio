@@ -16,15 +16,16 @@ const Header = ({ val }) => (
   <div className="flex-column">
     <span
       style={{
-        left:`3vh`,
+        paddingleft:`3vh`,
         zIndex: `3`,
         paddingBottom: `5vh`,
-        paddingTop: `4vh`,
+        paddingTop: `9vh`,
         display: `block`,
-        fontSize: `18px`,
+        fontSize: `22px`,
         fontWeight: `500`,
         lineHeight: `21px`,
-        letterSpacing: `0.325em`
+        letterSpacing: `0.325em`,
+        fontFamily: `Walter Turncoat`
       }}>
       <Link
         to="/"
@@ -41,96 +42,99 @@ const Header = ({ val }) => (
     />
     <br/>
 
-    <span
-    style={{
-      fontSize: `18px`,
-      fontWeight: `500`,
-      lineHeight: `21px`,
-      letterSpacing: `0.065em`
-    }}>
 
 
     { val === 0 ?
-
+      <div className="row" id="navlink_active">
       <Link
         className="navlink_active"
         to="/"
       >
         HOME
       </Link>
+      </div>
     :
+      <div className="row" id="navlink">
       <Link
         to="/"
         className="navlink"
       >
         HOME
       </Link>
+      </div>
     }
-
-    <br/>
 
 
     { val === 1 ?
 
+      <div className="row" id="navlink_active">
       <Link
         className="navlink_active"
         to="/uiux_design"
       >
         DESIGN
       </Link>
+      </div>
     :
+
+      <div className="row" id="navlink">
       <Link
         to="/uiux_design"
         className="navlink"
       >
         DESIGN
       </Link>
+      </div>
     }
-
-    <br/>
 
     { val === 2 ?
 
+      <div className="row" id="navlink_active">
       <Link
         className="navlink_active"
         to="/painting"
       >
         ART
       </Link>
+      </div>
     :
+
+      <div className="row" id="navlink">
       <Link
         to="/painting"
         className="navlink"
       >
         ART
       </Link>
+      </div>
     }
-
-    <br/>
 
     { val === 3 ?
 
+
+      <div className="row" id="navlink_active">
       <Link
         className="navlink_active"
         to="/photos"
       >
         PHOTOS
       </Link>
+      </div>
     :
+      <div className="row" id="navlink">
       <Link
         to="/photos"
         className="navlink"
       >
         PHOTOS
       </Link>
+      </div>
     }
 
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
 
 
-    </span>
 
 </div>
   </div>
