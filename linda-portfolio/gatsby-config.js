@@ -33,7 +33,9 @@ module.exports = {
                         `cantarell`,
                         `maven pro`,
                         `miriam libre`,
-                        `walter turncoat`
+                        `walter turncoat`,
+                        `barrio`,
+                        `roboto`
                     ], display: 'swap'
                 }
             }

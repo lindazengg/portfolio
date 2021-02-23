@@ -9,11 +9,18 @@ $hoverBgColorr: #d0dbc6;
 $defaultsize: 16px;
 $defaultBiggerSize: 25px;
 
+body{
+	background-color: $paleSpringBud;
+}
 
 #header {
   z-index: 20;
   display: block;
-  background-color: $teaGreen;
+  min-width: 30vh;
+}
+
+#site {
+	background-color: $paleSpringBud;
 }
 
 #navbarNav {
@@ -54,6 +61,7 @@ $defaultBiggerSize: 25px;
   letter-spacing: 0.55em;
   min-height: 20px;
   display: block;
+  font: 'Barrio';
 }
 
 .headerName:hover {
@@ -74,13 +82,15 @@ $defaultBiggerSize: 25px;
 #navlink_active {
 	.navlink_active {
 		font-size: $defaultBiggerSize;
-		text-decoration-line: underline;
+		//text-decoration-line: underline;
 		text-decoration-thickness: 8px;
 		  text-decoration-color: $primaryColor;
 		  color: $primaryColor;
 		  display: block;
 		  padding: 15px;
-		  font-weight: bold
+		  font-weight: bold;
+		   font-family: Poppins;
+	  letter-spacing: 0.125em;
 
 	}
 }
@@ -90,23 +100,28 @@ $defaultBiggerSize: 25px;
 	text-decoration-line: none;
 	  display: block;
 	  transition: linear 1s;
+	  font-family: 'Roboto';
+	  letter-spacing: 0.125em;
 }
 
 .navlink:hover {
 	text-decoration-line: underline;
-	text-decoration-thickness: 8px;
+	//text-decoration-thickness: 8px;
 	  text-decoration-color: $primaryColor;
 	color: $primaryColor;
 	  display: block;
+	 
 }
 
 .navlink {
 		font-size: $defaultBiggerSize;
-	font-weight: bold;
+	font-weight: lighter;
+       font-family: 'Roboto'; 
     text-decoration: none;
     color: $primaryColor;
 	  display: block;
 	  padding: 15px;
+	  letter-spacing: 0.125em;
 }
 
 .projectListing {
@@ -116,18 +131,22 @@ $defaultBiggerSize: 25px;
 	background-color: transparent;
 }
 
+.projectPicture-hov{
+	display: none;
+	z-index: 99;
+	width: 100%;
+
+}
 .projectListing:hover {
-  background: url("https://ewebdesign.com/wp-content/themes/ewebdesign/assets/img/wave.svg");
-  background-repeat: repeat;
-  background-position-x: 0%;
-  background-position-y: 0%;
-  background-size: auto auto;
-  background-repeat: repeat-x;
-  background-size: 15px 5px;
-  background-position: 2px 0px;
+  
   text-decoration: none;
-  background-color: transparent;
-  transform: rotate(1deg);
+  .projectPicture-hov {
+  	display: inline-block;
+  	top:0;
+  	  }
+  .projectPicture {
+  	display: none;
+  }
 }
 
 .projectListing:focus {
@@ -140,6 +159,11 @@ $defaultBiggerSize: 25px;
 .projectPicture {
   width: 100%;
 }
+
+.hov-img{
+
+}
+
 
 #secondnav_link_active {
 	background-image: url("../images/arrow.png");
@@ -235,11 +259,18 @@ $defaultBiggerSize: 25px;
 }
 
 .iconlinktext {
+	font-family: 'Roboto';
+	letter-spacing: 0.1em;
 	padding-left: 5px;
 }
 
 .selected {
 	width: $defaultBiggerSize;
 	marginTop: -5px;
+}
+
+.pscroll{
+	width: 100%;
+	padding: 10px;
 }
 

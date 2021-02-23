@@ -14,7 +14,7 @@ const ContentPage = ({ children, val, val2}) => (
         bottom: `0`
       }}>
       <div className="col-xl-3" style={{
-        backgroundColor: `rgba(256, 256, 256, 0.6)`,
+        backgroundColor: `rgba(244, 244, 199, 0.6)`,
         top: `0`,
         zIndex: `10`,
         position: `sticky`,
@@ -23,6 +23,7 @@ const ContentPage = ({ children, val, val2}) => (
         paddingTop: `19vh`,
         paddingRight: `50px`,
         paddingLeft: `65px`
+    
       }}>
 
 
@@ -33,7 +34,7 @@ const ContentPage = ({ children, val, val2}) => (
           className="secondnav_link_active"
           to="/uiux_design"
         >
-          UI/UX DESIGN
+          UI/UX 
         </Link>
         </div>
       : 
@@ -42,7 +43,7 @@ const ContentPage = ({ children, val, val2}) => (
           to="/uiux_design"
           className="secondnav_link"
         >
-          UI/UX DESIGN
+          UI/UX 
         </Link>
         </div>
       }
@@ -53,7 +54,7 @@ const ContentPage = ({ children, val, val2}) => (
           className="secondnav_link_active"
           to="/experienceDesign"
         >
-          EXPERIENCE DESIGN
+          EXPERIENCE 
         </Link>
         </div>
       : 
@@ -62,7 +63,7 @@ const ContentPage = ({ children, val, val2}) => (
           to="/experienceDesign"
           className="secondnav_link"
         >
-          EXPERIENCE DESIGN
+          EXPERIENCE 
         </Link>
         </div>
       }

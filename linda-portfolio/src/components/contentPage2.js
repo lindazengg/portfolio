@@ -14,7 +14,7 @@ const ContentPage2 = ({ children, val, val2}) => (
         bottom: `0`
       }}>
       <div className="col-xl-3" style={{
-        backgroundColor: `rgba(256, 256, 256, 0.6)`,
+        backgroundColor: `rgba(244, 244, 199, 0.6)`,
         top: `0`,
         zIndex: `10`,
         position: `sticky`,
@@ -33,7 +33,7 @@ const ContentPage2 = ({ children, val, val2}) => (
           className="secondnav_link_active"
           to="/painting"
         >
-          PAINTING
+          DIGITAL
         </Link>
         </div>
       :
@@ -42,7 +42,7 @@ const ContentPage2 = ({ children, val, val2}) => (
           to="/painting"
           className="secondnav_link"
         >
-          PAINTING
+          DIGITAL
         </Link>
         </div>
       }
@@ -53,7 +53,7 @@ const ContentPage2 = ({ children, val, val2}) => (
           className="secondnav_link_active"
           to="/illustration"
         >
-          ILLUSTRATION
+          FINE ARTS
         </Link>
         </div>
       :
@@ -62,29 +62,12 @@ const ContentPage2 = ({ children, val, val2}) => (
           to="/illustration"
           className="secondnav_link"
         >
-          ILLUSTRATION
+          FINE ARTS
         </Link>
         </div>
-      }
+      
 
-      { val2 === 2 ?
-        <div className="row"  id="secondnav_link_active">
-        <Link
-          className="secondnav_link_active"
-          to="/sketches"
-        >
-          SKETCHES
-        </Link>
-        </div>
-      :
-      <div className="row"  id="secondnav_link">
-        <Link
-          to="/sketches"
-          className="secondnav_link"
-        >
-          SKETCHES
-        </Link>
-        </div>
+      
       }
       </div>
       { children }

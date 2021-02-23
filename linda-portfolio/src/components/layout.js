@@ -13,7 +13,7 @@ import linkedin from "../images/linkedin.png"
 
 const Layout = ({ children, val }) => (
     <>
-      <div className="row" style={{maxWidth: `100vw`}}>
+      <div className="row" id="site" style={{maxWidth: `100vw`}}>
       <div className="col-xl-2" id="header" style={{
       top:`0`,
       position: `sticky`,
@@ -40,19 +40,19 @@ const Layout = ({ children, val }) => (
       }}>
       <div style={{display: `inline-block`, textAlign: `left`}}>
       <div className="row">
-        <a className="iconlinks" href="">
+        <a className="iconlinks" href="mailto: zeng.lin@northeastern.edu">
         <img src={ email } alt="Email icon" /> 
         <span className="iconlinktext"> EMAIL </span>
         </a>
         </div>
         <div className="row">
-        <a className="iconlinks" href="">
+        <a className="iconlinks" href="https://drive.google.com/file/d/16o3Gfz9rwz1GUQabfSXXM4ejD9LjTxUl/view?usp=sharing">
          <img src={ resume } alt="Resume icon" /> 
         <span className="iconlinktext"> RESUME </span>
          </a>
          </div>
          <div className="row">
-        <a className="iconlinks" href="">
+        <a className="iconlinks" href="https://www.linkedin.com/in/linda-zeng-3809b318b/">
          <img src={ linkedin } alt="Linkedin icon" /> 
         <span className="iconlinktext"> LINKEDIN </span>
          </a>

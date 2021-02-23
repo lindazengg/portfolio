@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 
 import "./layout.scss"
-import filler from "../images/filler.jpg"
+import filler from "../images/profile.gif"
 import menu from "../images/menu.png"
 
 
@@ -21,11 +21,11 @@ const Header = ({ val }) => (
         paddingBottom: `5vh`,
         paddingTop: `9vh`,
         display: `block`,
-        fontSize: `22px`,
+        fontSize: `30px`,
         fontWeight: `500`,
-        lineHeight: `21px`,
-        letterSpacing: `0.325em`,
-        fontFamily: `Walter Turncoat`
+        lineHeight: `27px`,
+        letterSpacing: `0.3 em`,
+        fontFamily: `Barrio`,
       }}>
       <Link
         to="/"
@@ -37,7 +37,7 @@ const Header = ({ val }) => (
 
     <img src={ filler } alt="linda zeng" style={{
       maxWidth: `15vh`,
-      paddingBottom: `40px`
+      paddingBottom: `45px`
     }}
     />
     <br/>
@@ -50,7 +50,7 @@ const Header = ({ val }) => (
         className="navlink_active"
         to="/"
       >
-        HOME
+        ABOUT
       </Link>
       </div>
     :
@@ -59,7 +59,7 @@ const Header = ({ val }) => (
         to="/"
         className="navlink"
       >
-        HOME
+        ABOUT 
       </Link>
       </div>
     }

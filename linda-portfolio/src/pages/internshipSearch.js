@@ -8,8 +8,14 @@ import { navigate } from "gatsby"
 import "../components/layout.scss"
 import "../components/fonts.scss"
 
+import is1 from "../images/is1.png"
+
 const InternshipSearch = () => (
-  <ProjectPage val={ 1 } backPage="/experienceDesign" projectTitle={ "Internship Search" } projectText= { "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged." }>
+  <ProjectPage val={ 1 } backPage="/experienceDesign" projectTitle={ "Internship Search" } projectText= { "Assignment for ARTG3461-Experience Design 1." }>
+  
+  	<img className="pscroll" src={is1}/>
+
+
   </ProjectPage>
 
   )

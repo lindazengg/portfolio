@@ -8,7 +8,7 @@ import { Link, navigate } from "gatsby"
 
 import "./layout.scss"
 
-const ProjectPage = ({ children, val, backPage, projectTitle, projectText}) => (
+const ProjectPage = ({ children, val, backPage, projectTitle, projectText, projectText2, projectText3}) => (
     <>
       <Layout val={ val }>
       <div className="row" style={{
@@ -16,7 +16,7 @@ const ProjectPage = ({ children, val, backPage, projectTitle, projectText}) => (
         marginLeft: `3vh`,
         marginRight: `3vh`
       }}>
-      <div className="col-md-2" style={{
+      <div className="col-sm-3" style={{
 
       }}>
       <a
@@ -33,10 +33,20 @@ const ProjectPage = ({ children, val, backPage, projectTitle, projectText}) => (
       <br/>
       <span className="projectText">
       { projectText }
+      <br/>
+      <br/>
+      { projectText2 }
+      <br/>
+      <br/>
+      { projectText3 }
+
       </span>
       </div>
-      <div className="col-10" style={{
-        padding: `50px`
+      <div className="col-8" style={{
+        paddingLeft: `50px`,
+        paddingRight: `50px`,
+        paddingBottom: `50px`,
+        paddingTop: `5vh`
       }}>
       { children }
       </div>

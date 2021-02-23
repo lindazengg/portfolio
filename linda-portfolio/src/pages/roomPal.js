@@ -8,8 +8,17 @@ import { navigate } from "gatsby"
 import "../components/layout.scss"
 import "../components/fonts.scss"
 
+import rp1 from "../images/rp-1.png"
+import rp2 from "../images/rp-2.png"
+
+
 const RoomPal = () => (
-  <ProjectPage val={ 1 } backPage="/uiux_design" projectTitle={ "RoomPal" } projectText= { "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged." }>
+  <ProjectPage val={ 1 } backPage="/uiux_design" projectTitle={ "RoomPal" } projectText= { "My role at RoomPal was to design the user interface. The user interface includes all stages of the user experience in the app: the login/sign-up, search, and confirmation process. I collaborated with the developers of the project to create iterations based on both functionality and feasibility. " }
+  projectText2={"Additionally, I mentored another designer on the team to create the wireframes on Figma and establish a timeline on Notion. This involved teaching the program and guiding the design process."}>
+  
+  	<img className="pscroll" src={ rp1 }/>
+	<img className="pscroll" src={ rp2 }/>
+	
   </ProjectPage>
 
   )
