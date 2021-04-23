@@ -7,6 +7,7 @@ import { navigate } from "gatsby"
 
 import about from "../images/about.png"
 import about1 from "../images/por.png"
+import filler from "../images/profile.gif"
 
 import "../components/fonts.scss"
 
@@ -62,7 +63,7 @@ style={{
   <img style={{
     width: `100%`
   }}
-  src={about1} alt="linda's picture" />
+  src={filler} alt="linda's picture" />
 </div>
  </div>
 

@@ -5,6 +5,7 @@ import React from "react"
 import "./layout.scss"
 import filler from "../images/profile.gif"
 import menu from "../images/menu.png"
+import about1 from "../images/por.png"
 
 
 const Header = ({ val }) => (
@@ -35,7 +36,7 @@ const Header = ({ val }) => (
       </Link>
     </span>
 
-    <img src={ filler } alt="linda zeng" style={{
+    <img src={ about1 } alt="linda zeng" style={{
       maxWidth: `15vh`,
       paddingBottom: `45px`
     }}
