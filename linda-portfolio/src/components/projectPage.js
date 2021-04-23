@@ -51,7 +51,7 @@ const ProjectPage = ({ children, val, backPage, projectTitle, projectText, proje
 
       </span>
       </div>
-      <div className="col-8" style={{
+      <div className="col-md-8" style={{
         paddingLeft: `50px`,
         paddingRight: `50px`,
         paddingBottom: `50px`,
