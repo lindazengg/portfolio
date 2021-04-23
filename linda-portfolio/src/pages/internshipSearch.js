@@ -12,7 +12,11 @@ import "../components/fonts.scss"
 import is1 from "../images/is1.png"
 
 const InternshipSearch = () => (
-  <ProjectPage val={ 1 } backPage="/experienceDesign" projectTitle={ "Internship Search" } projectText= { "Assignment for ARTG3461-Experience Design 1." }>
+  <ProjectPage val={ 1 } 
+  backPage="/experienceDesign" 
+  link2="https://www.figma.com/file/YVt11LmngdqXYo1AlAMP5x/final-3462-proto?node-id=0%3A1"
+  projectTitle={ "Internship Search" } 
+  projectText= { "Assignment for ARTG3461-Experience Design 1." }>
   
   	
      <ProjectPhoto imgsrc={ is1 } targetId="is1"></ProjectPhoto>

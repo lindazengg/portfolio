@@ -4,11 +4,12 @@ import Header from "../components/header"
 import Layout from "../components/layout"
 import MyButton from "../components/myButton"
 import backArrow from "../images/backarrow.png"
+import launch from "../images/openTab.png"
 import { Link, navigate } from "gatsby"
 
 import "./layout.scss"
 
-const ProjectPage = ({ children, val, backPage, projectTitle, projectText, projectText2, projectText3}) => (
+const ProjectPage = ({ children, val, backPage, projectTitle, projectText, projectText2, projectText3, link, link2}) => (
     <>
       <Layout val={ val }>
       <div className="row" style={{
@@ -30,6 +31,14 @@ const ProjectPage = ({ children, val, backPage, projectTitle, projectText, proje
       <span className="projectTitle">
       { projectTitle }
       </span>
+      <br/>
+
+      {  link ? <a class="link" target="_blank" href={ link }> 
+      LAUNCH MOBILE PROTOTYPE <img src={ launch }/>
+      </a> : <></> }
+       {  link2 ? <a class="link" target="_blank" href={ link2 }> 
+      LAUNCH PROTOTYPE <img src={ launch }/>
+      </a> : <></> }
       <br/>
       <span className="projectText">
       { projectText }
