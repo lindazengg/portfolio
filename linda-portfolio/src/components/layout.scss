@@ -34,6 +34,8 @@ body{
   margin-top: 6vh;
 }
 
+
+
 .btn {
       font-style: light;
       font-family: Poppins;
@@ -41,6 +43,15 @@ body{
       border: solid 1px !important;
       margin: 0;
       background-color: transparent;
+}
+
+.imageBtn {
+	border: none;
+	background-color: transparent;
+}
+ 
+.modal-lg {
+	max-width: 1500px;
 }
 
 .back {
@@ -89,7 +100,6 @@ body{
 		  display: block;
 		  padding: 15px;
 		  font-weight: bold;
-		   font-family: Poppins;
 	  letter-spacing: 0.125em;
 
 	}

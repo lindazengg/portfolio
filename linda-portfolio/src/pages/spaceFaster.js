@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 
 import ProjectPage from "../components/projectPage"
 import MyButton from "../components/myButton"
+import ProjectPhoto from "../components/ProjectPhoto"
 import { navigate } from "gatsby"
 
 import "../components/layout.scss"
@@ -25,14 +26,15 @@ const SpaceFaster = () => (
   	projectText2={"This was a pivotal experience because I was the lead designer for the venture. I was inspired to self-teach most of the programs I used to develop my designs and delve into different subjects such as marketing. I worked closely with a team of 7 developers to discuss opportunity spaces as well as gain feedback for designs."}
   	projectText3={"Notable Achievements: $13.9k Jelly Incubation Fund Recipient"}>
   	
-	<img className="pscroll" src={ sf2 }/>
-	<img className="pscroll" src={ sf3 }/>
-	<img className="pscroll" src={ sf4 }/>
-	<img className="pscroll" src={ sf5 }/>
-	<img className="pscroll" src={ sf6 }/>
-	<img className="pscroll" src={ sf7 }/>
-	<img className="pscroll" src={ sf8 }/>
-	<img className="pscroll" src={ sf9 }/>
+
+  	<ProjectPhoto imgsrc={ sf2 } targetId="sf2"> </ProjectPhoto>
+  	<ProjectPhoto imgsrc={ sf3 } targetId="sf3"> </ProjectPhoto>
+  	<ProjectPhoto imgsrc={ sf4 } targetId="sf4"> </ProjectPhoto>
+  	<ProjectPhoto imgsrc={ sf5 } targetId="sf5"> </ProjectPhoto>
+  	<ProjectPhoto imgsrc={ sf6 } targetId="sf6"> </ProjectPhoto>
+  	<ProjectPhoto imgsrc={ sf7 } targetId="sf7"> </ProjectPhoto>
+  	<ProjectPhoto imgsrc={ sf8 } targetId="sf8"> </ProjectPhoto>
+  	<ProjectPhoto imgsrc={ sf9 } targetId="sf9"> </ProjectPhoto>
   </ProjectPage>
 
   )
